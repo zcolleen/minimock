@@ -47,7 +47,8 @@ func getCommit(commit string, buildInfo *debug.BuildInfo) string {
 		return commit
 	}
 	for _, setting := range buildInfo.Settings {
-		log.Println(setting.Key)
+		log.Println("Key: ", setting.Key)
+		log.Println("Value: ", setting.Value)
 		if setting.Key == "vcs.revision" {
 			return setting.Value
 		}
