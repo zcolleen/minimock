@@ -8,6 +8,7 @@ import (
 	"go/token"
 	"io"
 	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
 	"runtime/debug"
@@ -46,6 +47,7 @@ func getCommit(commit string, buildInfo *debug.BuildInfo) string {
 		return commit
 	}
 	for _, setting := range buildInfo.Settings {
+		log.Println(setting.Key)
 		if setting.Key == "vcs.revision" {
 			return setting.Value
 		}
