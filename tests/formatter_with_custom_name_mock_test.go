@@ -139,7 +139,7 @@ func TestCustomFormatterNameMock_ReturnAfterSet(t *testing.T) {
 }
 
 func TestCustomFormatterNameMock_ReturnWithoutExpectForFixedArgsMethod(t *testing.T) {
-	// Test for issue https://github.com/gojuno/minimock/issues/31
+	// Test for issue https://github.com/zcolleen/minimock/issues/31
 
 	tester := NewTesterMock(t)
 	defer tester.MinimockFinish()

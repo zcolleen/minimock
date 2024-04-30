@@ -4,7 +4,6 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gojuno/minimock/v3"
 	"github.com/stretchr/testify/assert"
 )
 
