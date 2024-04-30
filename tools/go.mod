@@ -1,4 +1,4 @@
-module github.com/gojuno/minimock/tools
+module github.com/zcolleen/minimock/tools
 
 go 1.21
 

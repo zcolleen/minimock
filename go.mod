@@ -1,4 +1,4 @@
-module github.com/gojuno/minimock/v3
+module github.com/zcolleen/minimock/v3
 
 require (
 	github.com/davecgh/go-spew v1.1.1
@@ -22,4 +22,3 @@ require (
 go 1.22
 
 toolchain go1.22.0
-

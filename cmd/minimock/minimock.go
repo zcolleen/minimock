@@ -14,11 +14,11 @@ import (
 	"text/template"
 	"time"
 
-	minimock "github.com/gojuno/minimock/v3"
-	"github.com/gojuno/minimock/v3/internal/types"
 	"github.com/hexdigest/gowrap/generator"
 	"github.com/hexdigest/gowrap/pkg"
 	"github.com/pkg/errors"
+	minimock "github.com/zcolleen/minimock/v3"
+	"github.com/zcolleen/minimock/v3/internal/types"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -274,7 +274,7 @@ Examples:
   Generate mocks for the fmt.Stringer and all interfaces from the "io" package and put them into the "./buffer" package:
     {{bold "minimock"}} {{bold "-i"}} fmt.Stringer,io.* {{bold "-o"}} ./buffer
 
-For more information please visit https://github.com/gojuno/minimock
+For more information please visit https://github.com/zcolleen/minimock
 `
 
 	t := template.Must(template.New("usage").Funcs(template.FuncMap{

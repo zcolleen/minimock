@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gojuno/minimock/v3"
 	"github.com/stretchr/testify/assert"
+	"github.com/zcolleen/minimock/v3"
 )
 
 func TestContextAccepterMock_AnyContext(t *testing.T) {

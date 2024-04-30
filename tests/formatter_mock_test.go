@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	minimock "github.com/gojuno/minimock/v3"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	minimock "github.com/zcolleen/minimock/v3"
 )
 
 func TestFormatterMock_ImplementsStringer(t *testing.T) {
@@ -149,7 +149,7 @@ func TestFormatterMock_ReturnAfterSet(t *testing.T) {
 }
 
 func TestFormatterMock_ReturnWithoutExpectForFixedArgsMethod(t *testing.T) {
-	// Test for issue https://github.com/gojuno/minimock/issues/31
+	// Test for issue https://github.com/zcolleen/minimock/issues/31
 
 	tester := NewTesterMock(t).CleanupMock.Return()
 

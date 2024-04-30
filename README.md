@@ -1,7 +1,7 @@
 ![logo](https://rawgit.com/gojuno/minimock/master/logo.svg)
-[![GoDoc](https://godoc.org/github.com/gojuno/minimock?status.svg)](http://godoc.org/github.com/gojuno/minimock) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/gojuno/minimock)](https://goreportcard.com/report/github.com/gojuno/minimock)
-[![Release](https://img.shields.io/github/release/gojuno/minimock.svg)](https://github.com/gojuno/minimock/releases/latest)
+[![GoDoc](https://godoc.org/github.com/zcolleen/minimock?status.svg)](http://godoc.org/github.com/zcolleen/minimock) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/zcolleen/minimock)](https://goreportcard.com/report/github.com/zcolleen/minimock)
+[![Release](https://img.shields.io/github/release/gojuno/minimock.svg)](https://github.com/zcolleen/minimock/releases/latest)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/avelino/awesome-go#testing)
 
 
@@ -25,14 +25,14 @@ The main features of minimock are:
 
 ## Installation
 
-If you use go modules please download the [latest binary](https://github.com/gojuno/minimock/releases/latest)
+If you use go modules please download the [latest binary](https://github.com/zcolleen/minimock/releases/latest)
 or install minimock from source:
 ```
-go install github.com/gojuno/minimock/v3/cmd/minimock@latest
+go install github.com/zcolleen/minimock/v3/cmd/minimock@latest
 ```
 
-If you don't use go modules please find the latest v2.x binary [here](https://github.com/gojuno/minimock/releases)
-or install minimock using [v2 branch](https://github.com/gojuno/minimock/tree/v2)
+If you don't use go modules please find the latest v2.x binary [here](https://github.com/zcolleen/minimock/releases)
+or install minimock using [v2 branch](https://github.com/zcolleen/minimock/tree/v2)
 
 ## Usage
 
@@ -53,7 +53,7 @@ or install minimock using [v2 branch](https://github.com/gojuno/minimock/tree/v2
     	mock file suffix (default "_mock_test.go")
 ```
 
-Let's say we have the following interface declaration in github.com/gojuno/minimock/tests package:
+Let's say we have the following interface declaration in github.com/zcolleen/minimock/tests package:
 ```go
 type Formatter interface {
 	Format(string, ...interface{}) string
@@ -63,14 +63,14 @@ type Formatter interface {
 This will generate mocks for all interfaces defined in the "tests" package:
 
 ```
-$ cd ~/go/src/github.com/gojuno/minimock/tests
+$ cd ~/go/src/github.com/zcolleen/minimock/tests
 $ minimock 
 ```
 
 Here is how to generate a mock for the "Formatter" interface only:
 
 ```
-$ cd ~/go/src/github.com/gojuno/minimock/tests
+$ cd ~/go/src/github.com/zcolleen/minimock/tests
 $ minimock -i Formatter 
 ```
 
@@ -83,7 +83,7 @@ $ minimock -i ./tests.Formatter
 Same using the full import path of the source package:
 
 ```
-$ minimock -i github.com/gojuno/minimock/tests.Formatter -o ./tests/
+$ minimock -i github.com/zcolleen/minimock/tests.Formatter -o ./tests/
 ```
 
 All the examples above generate ./tests/formatter_mock_test.go file
